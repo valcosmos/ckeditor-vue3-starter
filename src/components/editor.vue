@@ -29,6 +29,7 @@ import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed'
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph'
 import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office'
 import { Base64UploadAdapter } from '@ckeditor/ckeditor5-upload'
+
 import {
   Table,
   TableCaption,
@@ -39,7 +40,9 @@ import {
 } from '@ckeditor/ckeditor5-table'
 import { TextTransformation } from '@ckeditor/ckeditor5-typing'
 import { Undo } from '@ckeditor/ckeditor5-undo'
-import FullScreen from '@pikulinpw/ckeditor5-fullscreen'
+import FullScreen from './fullscreen.js'
+
+// import FullScreen from '@pikulinpw/ckeditor5-fullscreen'
 
 const props = withDefaults(defineProps<{ preview?: boolean }>(), { preview: false })
 

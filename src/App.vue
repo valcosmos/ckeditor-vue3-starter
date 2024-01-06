@@ -6,7 +6,7 @@ const data = ref(`<h2>Bilingual Personality Disorder</h2><figure class="image im
 </script>
 
 <template>
-  <div h-screen flex space-x-2>
+  <div flex space-x-2>
     <editor v-model="data" w="50%" />
     <editor v-model="data" w="50%" preview />
   </div>
