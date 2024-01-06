@@ -29,6 +29,7 @@
     "@ckeditor/ckeditor5-typing": "40.2.0",
     "@ckeditor/ckeditor5-ui": "^40.2.0",
     "@ckeditor/ckeditor5-undo": "40.2.0",
+    "@ckeditor/ckeditor5-upload": "^40.2.0",
     "@ckeditor/ckeditor5-vue": "^5.1.0",
     "@pikulinpw/ckeditor5-fullscreen": "^1.0.1",
     "@unocss/reset": "^0.58.3",
@@ -55,6 +56,6 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*": "eslint . --fix"
   }
 }

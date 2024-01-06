@@ -28,6 +28,7 @@ import { List } from '@ckeditor/ckeditor5-list'
 import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed'
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph'
 import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office'
+import { Base64UploadAdapter } from '@ckeditor/ckeditor5-upload'
 import {
   Table,
   TableCaption,
@@ -70,7 +71,7 @@ const toolbar = computed(() => {
   }
 })
 const editorConfig: EditorConfig = {
-  plugins: [Autoformat, BlockQuote, Bold, Essentials, Heading, Image, ImageCaption, ImageResize, ImageStyle, ImageToolbar, ImageUpload, Indent, Italic, Link, List, MediaEmbed, Paragraph, PasteFromOffice, Table, TableCaption, TableCellProperties, TableColumnResize, TableProperties, TableToolbar, TextTransformation, Undo, FullScreen],
+  plugins: [Autoformat, BlockQuote, Bold, Essentials, Heading, Image, ImageCaption, ImageResize, ImageStyle, ImageToolbar, ImageUpload, Indent, Italic, Link, List, MediaEmbed, Paragraph, PasteFromOffice, Table, TableCaption, TableCellProperties, TableColumnResize, TableProperties, TableToolbar, TextTransformation, Undo, FullScreen, Base64UploadAdapter],
   toolbar: toolbar.value,
 
   link: {
@@ -91,7 +92,7 @@ const editorConfig: EditorConfig = {
   language: 'zh-cn',
   image: {
     toolbar: [
-     	'imageTextAlternative',
+      'imageTextAlternative',
       'toggleImageCaption',
       'imageStyle:inline',
       'imageStyle:block',
